@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Active Users</h1>
+  <div class="col-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let user of usersList">
+        {{ user.name }} |
+        <a href="#" (click)="users.deActivate(user.myId)">Set to inactive</a>
+      </li>
+    </ul>
+  </div>
+</div>
