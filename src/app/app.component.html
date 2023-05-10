@@ -1,5 +1,16 @@
-<h1>Processes counter: {{ counter }}</h1>
-<hr />
-<app-active-users></app-active-users>
-<hr />
-<app-inactive-users></app-inactive-users>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 text-center">
+      <h1 class="mb-3">Processes counter: {{ counter }}</h1>
+      <hr class="bg-light" />
+      <div class="row mt-5">
+        <div class="col-12 col-md-6">
+          <app-active-users></app-active-users>
+        </div>
+        <div class="col-12 col-md-6 mt-5 mt-md-0">
+          <app-inactive-users></app-inactive-users>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
